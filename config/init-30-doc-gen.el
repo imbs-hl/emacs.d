@@ -37,8 +37,9 @@
   (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
   (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
   (setq reftex-plug-into-AUCTeX t)
-  (setq TeX-PDF-mode t)
+  (setq TeX-PDF-mode t) ;; Pdf as default
   (setq reftex-bibliography-commands '("bibliography" "nobibliography" "addbibresource"))
+
   
   ;; Don't use Helm for the reftex-citation lookup
   (eval-after-load 'helm-mode
