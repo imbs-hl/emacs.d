@@ -72,5 +72,17 @@
   )
 
 
+;; == Recent files ==
+
+
+;; List of recent files with C-X C-r
+(use-package recentf
+  :config
+  (recentf-mode t)
+  (setq recentf-max-menu-items 25)
+  :init
+  (global-set-key "\C-x\ \C-r" 'recentf-open-files)
+  )
+
 
 ;;; init-20-nav-interface.el ends here
