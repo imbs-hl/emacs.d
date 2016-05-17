@@ -13,6 +13,8 @@
 ;;; Commentary:
 ;; Runs matlab mode, which applies to both matlab documents and the matlab shell
 
+;;;; Code:
+
 ;; == MATLAB ==
 (use-package matlab-mode
   :ensure t
