@@ -22,16 +22,17 @@
 
 ;; == Load Custom Theme ==
 
-;; Zenburn
-(use-package zenburn-theme
+;; Solarized dark theme
+(use-package solarized-theme
   :ensure t
-  :config (load-theme 'zenburn t)
+  :config (load-theme 'solarized-dark t)
   )
 
+
 ;; I prefer using a smaller font size than the default (and 'Monaco')
-(if (eq system-type 'darwin)
-    (custom-set-faces '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 100 :width normal :foundry "nil" :family "Monaco")))))
-  (custom-set-faces '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "nil" :family "Ubuntu Mono"))))))
+;; (if (eq system-type 'darwin)
+;;     (custom-set-faces '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 100 :width normal :foundry "nil" :family "Monaco")))))
+;;   (custom-set-faces '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "nil" :family "Ubuntu Mono"))))))
 
 ;; Set default fill column
 (setq-default fill-column 80)
@@ -45,6 +46,10 @@
 (if window-system (scroll-bar-mode -1))
 (tool-bar-mode -1)
 (menu-bar-mode -1)
+
+;; Unbinds right 'alt' key from emacs to get squared brackets etc.
+(setq ns-right-alternate-modifier nil)
+
 
 ;; No Backup Files
 (setq make-backup-files nil)
