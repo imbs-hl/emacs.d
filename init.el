@@ -20,7 +20,7 @@
 ;; PURPOSE.  See the GNU General Public License for more details.
 
 ;;; Commentary:
-;; Calls my emacs configuration files after installing use-package, which is
+;; Calls my Emacs configuration files after installing use-package, which is
 ;; necessary for operation.
 ;;
 ;; Code inspired by:
