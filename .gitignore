@@ -18,7 +18,8 @@ srecode-map.el
 /session.*
 .DS_Store
 /projectile-bookmarks.eld
-
+ac-comphist.dat
+ido.last
 
 # ESS: needs to be cloned and made from:
 # https://github.com/emacs-ess/ESS.git
