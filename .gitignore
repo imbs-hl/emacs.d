@@ -21,6 +21,11 @@ srecode-map.el
 ac-comphist.dat
 ido.last
 
+
 # ESS: needs to be cloned and made from:
 # https://github.com/emacs-ess/ESS.git
 ess
+
+## Polymode: needs to be cloned from:
+## https://github.com/vitoshka/polymode
+polymode
