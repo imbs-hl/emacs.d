@@ -81,6 +81,6 @@
 
 
 ;; === misc ===
-(load-file "~/.emacs.d/config/init-70-misc-ledger.el")
+;; (load-file "~/.emacs.d/config/init-70-misc-ledger.el")
 
 ;;; init.el ends here
