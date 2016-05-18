@@ -1,6 +1,6 @@
 #  Emacs Configuration Files
 
-- From from https://github.com/gjstein/emacs.d
+- From https://github.com/gjstein/emacs.d
 
 
 ## Structure
