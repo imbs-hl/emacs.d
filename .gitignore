@@ -20,7 +20,7 @@ srecode-map.el
 /projectile-bookmarks.eld
 ac-comphist.dat
 ido.last
-
+abbrev_defs
 
 # ESS: needs to be cloned and made from:
 # https://github.com/emacs-ess/ESS.git
