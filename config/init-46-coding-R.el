@@ -2,16 +2,16 @@
 
 ;; Copyright (C) 2015 Gregory J Stein
 
-;; Author: Gregory J Stein <gregory.j.stein@gmail.com>
-;; Maintainer: Gregory J Stein <gregory.j.stein@gmail.com>
-;; Created: 20 Aug 2015
+;; Author: Arne Schillert  <arne.schillert@imbs.uni-luebeck.de>
+;; Maintainer: Arne Schillert  <arne.schillert@imbs.uni-luebeck.de>
+;; Created: 10 May 2016
 
-;; Keywords: configuration, matlab
-;; Homepage: https://github.com/gjstein/emacs.d
+;; Keywords: configuration, ess, R
+;; Homepage: https://github.com/imbs-hl/emacs.d
 ;; License: GNU General Public License (see init.el for details)
 
 ;;; Commentary:
-;; Runs matlab mode, which applies to both matlab documents and the matlab shell
+;; Runs ESS mode, most importantly for R and Rnw files
 
 ;;;; Code:
 
@@ -28,6 +28,8 @@
   :commands R
   :mode ("\\.R\\'" . R-mode)
   )
+
+
 
 (use-package polymode		; ESS with polymode
     :ensure f	                        ; https://github.com/vitoshka/polymode
