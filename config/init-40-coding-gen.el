@@ -34,7 +34,18 @@
 	company-show-numbers            t
 	company-tooltip-limit           20
 	company-dabbrev-downcase        nil
-	)
+  )
+; ;; from https://stat.ethz.ch/pipermail/ess-help/2015-September/010684.html
+;   (define-key company-active-map [tab] 'company-complete-selection)
+;   (define-key company-active-map (kbd "TAB") 'company-complete-selection)
+;   (define-key company-active-map [return] nil)
+;   (define-key company-active-map (kbd "RET") nil)
+;   (define-key company-active-map (kbd "M-n") nil)
+;   (define-key company-active-map (kbd "M-p") nil)
+;   (define-key company-active-map (kbd "M-h") 'company-show-doc-buffer)
+;   (define-key company-active-map (kbd "M-,") 'company-select-next)
+;   (define-key company-active-map (kbd "M-k") 'company-select-previous)
+
   :bind ("C-;" . company-complete-common)
   )
 
@@ -50,7 +61,7 @@
   (setq projectile-completion-system 'helm)
   (use-package helm-projectile
     :ensure t
-    :init 
+    :init
     (helm-projectile-on)
     )
   )
@@ -79,7 +90,7 @@
 	 )))
   (add-hook 'c++-mode-hook (lambda () (setq flycheck-clang-language-standard "c++11")))
   (setq-default flycheck-disabled-checkers '(c/c++-clang c/c++-gcc))
-  
+
   )
 
 ;;; init-40-coding-gen.el ends here
