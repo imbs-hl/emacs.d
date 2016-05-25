@@ -14,3 +14,7 @@
 - For full support of R and Rnw/Rmd files:
   - Clone  and make [ESS](https://github.com/emacs-ess/ESS)
   - Clone [polymode](https://github.com/vspinu/polymode) 
+
+
+## TODO
+- Enable yasnippets and ido mode
