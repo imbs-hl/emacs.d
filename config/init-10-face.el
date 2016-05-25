@@ -58,10 +58,6 @@
 (line-number-mode 1)
 (column-number-mode 1)
 
-; Use shift to move between windows
-(use-package windmove
-  :config (windmove-default-keybindings 'shift))
-
 
 ;; No Backup Files
 (setq make-backup-files nil)

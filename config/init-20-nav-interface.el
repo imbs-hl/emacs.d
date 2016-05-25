@@ -18,6 +18,12 @@
 
 ;;; Code:
 
+
+; Use shift to move between windows
+(use-package windmove
+  :config (windmove-default-keybindings 'shift))
+
+
 ;; == Helm Mode ==
 (use-package helm
   :ensure t
