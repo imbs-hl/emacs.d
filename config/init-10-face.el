@@ -50,8 +50,19 @@
 ;; Unbinds right 'alt' key from emacs to get squared brackets etc.
 (setq ns-right-alternate-modifier nil)
 
+;;---------------------------------------------------------------------------
+;make the y or n suffice for a yes or no question
+(fset 'yes-or-no-p 'y-or-n-p)
+
+; show the current line and column numbers in the stats bar as well
+(line-number-mode 1)
+(column-number-mode 1)
+
+
 
 ;; No Backup Files
 (setq make-backup-files nil)
+; disable auto save
+(setq auto-save-default nil)
 
 ;;; init-10-face.el ends here
