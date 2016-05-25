@@ -34,7 +34,7 @@
   :config
 
   (require 'helm-config) ; Necessary for helm-mode
-  
+
   ;; Key bindings
   (bind-key "<tab>" 'helm-execute-persistent-action helm-map)
   (bind-key "C-i" 'helm-execute-persistent-action helm-map)
@@ -64,8 +64,8 @@
 	    "grep --color=always -d recurse %e -n%cH -e %p %f"))
 
   (helm-mode 1)
-  
-  :bind (("C-x b" . helm-mini)
+
+  :bind (;("C-x b" . helm-mini)
 	 ("C-x C-f" . helm-find-files)
 	 ("M-x" . helm-M-x)
 	 )
@@ -83,6 +83,29 @@
   :init
   (global-set-key "\C-x\ \C-r" 'recentf-open-files)
   )
+
+
+
+  (use-package ido
+    :init (progn (ido-mode 1)
+                 (ido-everywhere 1))
+    :config
+    (progn
+      (setq ido-case-fold t)
+      (setq ido-everywhere t)
+      (setq ido-enable-prefix nil)
+      (setq ido-enable-flex-matching t)
+      (setq ido-create-new-buffer 'always)
+      (setq ido-max-prospects 10)
+      (setq ido-use-faces nil)
+      (setq ido-file-extensions-order '(".rb" ".el" ".coffee" ".js"))
+      (add-to-list 'ido-ignore-files "\\.DS_Store")
+      (add-to-list 'ido-ignore-files "appspec.yml")))
+
+
+
+
+
 
 
 ;;; init-20-nav-interface.el ends here
