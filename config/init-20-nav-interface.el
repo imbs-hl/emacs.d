@@ -110,6 +110,21 @@
 
 
 
+  (use-package auto-complete
+    :ensure t
+    ;:diminish auto-complete-mode
+    :config
+    (progn
+;      (add-to-list 'ac-dictionary-directories (emacs-d "elpa/auto-complete-20131128.233/dict"))
+      (setq ac-use-fuzzy t
+        ac-disable-inline t
+        ac-use-menu-map t
+        ac-auto-show-menu t
+        ac-auto-start t
+        ac-ignore-case t
+        ac-candidate-menu-min 0)
+      ))
+
 
 
 
