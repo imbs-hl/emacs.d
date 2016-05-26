@@ -47,6 +47,12 @@
       (add-to-list 'auto-mode-alist '("\\.Rmd" . poly-markdown+r-mode)) ; RMarkdown files
       )
 
+
+(add-hook 'R-mode-hook
+          (defun my-R-mode-hook ()
+            (company-mode)
+            (local-set-key (kbd "TAB") 'company-complete)))
+
 ; ;;; R
 
 ;; ;; Emacs Speaks Statistics: ess
