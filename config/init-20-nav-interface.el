@@ -126,6 +126,22 @@
       ))
 
 
+;; Accessing  remote files with tramp 
+(use-package tramp
+  :ensure t
+  :init
+  (progn
+    ;; Tramp saves backups to the local directory, for speed.
+    (setq tramp-auto-save-directory "\"/tmp\"")
+    (setq tramp-default-method "ssh")
+	
+    ;; Disable vc for tramp files
+    (setq vc-ignore-dir-regexp
+          (format "\\(%s\\)\\|\\(%s\\)"
+                  vc-ignore-dir-regexp
+                  tramp-file-name-regexp))
+    )
+  )
 
 
 
