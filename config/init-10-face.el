@@ -50,13 +50,30 @@
 ;; Unbinds right 'alt' key from emacs to get squared brackets etc.
 (setq ns-right-alternate-modifier nil)
 
+
 ;;---------------------------------------------------------------------------
 ;make the y or n suffice for a yes or no question
 (fset 'yes-or-no-p 'y-or-n-p)
 
-; show the current line and column numbers in the stats bar as well
+
+;; show the current line and column numbers in the stats bar as well --------
 (line-number-mode 1)
 (column-number-mode 1)
+
+
+(use-package rainbow-delimiters
+  :ensure t
+  :commands rainbow-delimiters-mode
+  :init
+  (dolist (x '(LaTeX-mode-hook lisp-mode-hook emacs-lisp-mode-hook))
+    (add-hook x 'rainbow-delimiters-mode)))
+(show-paren-mode t)
+
+
+
+
+
+
 
 
 ;; No Backup Files
