@@ -144,5 +144,13 @@
   )
 
 
+(use-package yasnippet
+  :ensure t
+  :config
+  (yas-reload-all)
+  (yas-global-mode 1)
+  )
+
+
 
 ;;; init-20-nav-interface.el ends here
