@@ -26,7 +26,7 @@
   :ensure t
   :defer t
   :diminish company-mode
-;;  :init (add-hook 'after-init-hook 'global-company-mode)
+  :init (add-hook 'after-init-hook 'global-company-mode)
   :config
   (use-package company-irony :ensure t :defer t)
   (setq company-idle-delay              nil
@@ -46,7 +46,9 @@
 ;   (define-key company-active-map (kbd "M-,") 'company-select-next)
 ;   (define-key company-active-map (kbd "M-k") 'company-select-previous)
 
-  :bind ("C-;" . company-complete-common)
+  :bind
+  ("C-;" . company-complete-common)
+  ("TAB" . company-complete-common)
   )
 
 
