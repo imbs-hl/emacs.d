@@ -109,7 +109,6 @@
       (add-to-list 'ido-ignore-files "appspec.yml")))
 
 
-
   (use-package auto-complete
     :ensure t
     ;:diminish auto-complete-mode
@@ -150,6 +149,10 @@
   (yas-reload-all)
   (yas-global-mode 1)
   )
+
+
+(use-package multi-term
+  :ensure t)
 
 
 
